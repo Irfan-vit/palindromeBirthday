@@ -15,7 +15,7 @@ export default function App() {
   function formatter(date, type, readable) {
     var birthYear = date.getFullYear();
     var birthMonth = addMissingZeros(date.getMonth() + 1);
-    var birthDt = addMissingZeros(date.getDate() + 1);
+    var birthDt = addMissingZeros(date.getDate());
     var birthMonth2 = date.getMonth() + 1;
     if (type === 1) {
       return readable
