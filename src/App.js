@@ -70,7 +70,7 @@ export default function App() {
   function getPalindromeDates(date, palindromesToShow = 9) {
     var givenYear = date.getFullYear() - 1;
     var givenMonth = addMissingZeros(date.getMonth() + 1);
-    var givenDt = addMissingZeros(date.getDate() + 1);
+    var givenDt = addMissingZeros(date.getDate());
     let daten = new Date(givenYear, givenMonth, givenDt);
     for (
       let i = 0;
